@@ -1,154 +1,167 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<title>Резюме</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+    	*{
+    		box-sizing: border-box;
+    	}
+
+    	img{
+    		display: block;
+    		max-width: 100%;
+    	}
+
+    	html,body{
+    		width: 100%;
+    		margin: 0;
+    		padding: 0;
+    	    font-family: 'Open Sans', sans-serif;
+    	}
+
+    	.container-flex{
+    		display: -webkit-flex;
+    		display: -moz-flex;
+    		display: -ms-flex;
+    		display: -o-flex;
+    		display: flex;
+    		margin: auto;
+            padding:0 20vw;
+    	}
+
+    	.container{
+    		padding: 0 20vw;
+    	}
+
+    	.container-flex .item{
+    		width: 50%;
+    		padding: 6px;
+    	}
+
+    	.container-flex .item:nth-of-type(2){
+    		padding-left: 30px;
+    		display: -webkit-flex;
+    		display: -moz-flex;
+    		display: -ms-flex;
+    		display: -o-flex;
+    		display: flex;
+    		-webkit-flex-direction: column;
+    		-moz-flex-direction: column;
+    		-ms-flex-direction: column;
+    		-o-flex-direction: column;
+    		flex-direction: column;
+    		justify-content: center;
+    	}
+
+    	.item span{
+    		font-size: 20px;
+    	}
+        ul li{
+        	list-style-type: decimal;
+        	font-weight: 700;
+        	border-bottom: 1px dashed #ccc;
+        	margin-bottom: 6px;
+        }
+
+        .char span{
+        	display: inline-block;
+        	padding: 4px 10px 4px 4px;
+        	background: lightgreen;
+        	margin: 4px;
+        }
+    </style>
 </head>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-
-.item{
-  width:100vw;
-  height:100vh;
-  position: relative;
-  background:url(https://i.stack.imgur.com/rrOnw.jpg);
-  background-size: cover;
-  background-position:top center;
-}
-
-.item:after{
-  content: "";
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background: rgba(0,0,0,0.8);
-}
-
-.menu{
-  background:#131313;
-  height:50px;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:10;
-}
-.item1{
-  width:40%;
-}
-.item1 .svg{
-  display:block;
-  width:152px;
-  margin:auto;
-}
-.item2{
-  display: flex;
-  width:50%;
-}
-.menu a{
-  display: block;
-  color:#999;
-  text-decoration: none;
-  margin-right:10px;
-  position: relative;
-}
-.menu a:hover{
-  color:#fbfbfb;
-}
-.menu a:hover:after{
-  content:"";
-  display:block;
-  width:100%;
-  height:100%;
-  position: absolute;
-  top:-14px;
-  left:0;
-  border-top:2px solid #ea2935;
-  border-bottom:2px solid #ea2935;
-  padding:11px 0;
-}
-.item-inner{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  width:80%;
-  text-align:center;
-  z-index:100;
-}
-p:nth-of-type(1) span{
-  font-size: 24px;
-}
-p:nth-of-type(1) span:nth-of-type(1){
-  color:#fff;
-}
-p:nth-of-type(1) span:nth-of-type(2){
-  color:#ea2935;
-}
-p:nth-of-type(2){
-  padding:40px 0;
-  color:#fbfbfb;
-}
-
-.item-inner a{
-  text-decoration: none;
-}
-
-.item-inner a:nth-of-type(1){
-  background: #ea2935;
-  color:#fbfbfb;
-  text-transform: uppercase;
-  padding:12px 20px;
-}
-
-.item-inner a:nth-of-type(2){
-  background: #222;
-  color:#fbfbfb;
-  text-transform: uppercase;
-  padding:12px 20px;
-}
-</style>
 <body>
-<div class="menu">
-  <div class="item1">
-    <div class="svg">
-    <svg viewbox="0 0 150 100">
-      <path d="M0,0 148,0 148,50 130,100 20,100 0,50z"  fill="#0C0E14" stroke=" #ea2935" stroke-width="2px"/>
-      <text x="30px" y="60px" fill="#fff" stroke="none" style="font-size:16px;font-family:monospace;">Creativia</text>
-    </svg>
-    </div>
-  </div>
-  <div class="item2">
-    <a href="#">home</a>
-    <a href="#">about</a>
-    <a href="#">portfolio</a>
-    <a href="#">clients</a>
-    <a href="#">team</a>
-    <a href="#">services</a>
-    <a href="#">blog</a>
-    <a href="#">contacts</a>
-  </div>
-</div>
-<div class="item">
-  <div class="item-inner">
-    <p>
-      <span>lorem</span>
-      <span>ipsum</span>
-    </p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores reiciendis architecto veniam aliquid velit sed cumque necessitatibus quas iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, culpa!</p>
-    <p>
-      <a href="#">features</a>
-      <a href="#">free psd</a>
-    </p>
-  </div>
-</div>
+	<div class="container-flex">
+		<div class="item">
+			<img src="item.jpg" alt="">
+		</div>
+		<div class="item">
+			<p>
+			Ф.И.О:
+			<span><b>Ляпун</b></span>
+			<span><b>Максим</b></span>
+			<span><b>Сергеевич</b></span>
+		   </p>
+		   <p>
+		   	Дата Рождения:
+		   	<span><b>25.</b></span>
+		   	<span><b>января.</b></span>
+		   	<span><b>1978</b></span>
+		   </p>
+		   <p>
+		   	Возраст:
+		   	<b>41 год</b>
+		   </p>
+		   <p>
+		   	Телефон:
+		   	<b>+7-707-621-77-89</b>
+		   </p>
+		   <p>
+		   	Электронная почта:
+		   	<b>lenovonuj@gmail.com</b>
+		   </p>
+		   <p>
+            Гражданское состояние:
+		   	<b>Женат</b></p>
+		   <p>
+            Гражданство:
+		   	<b>Казахстан</b>
+		   </p>
+		   <p>
+		   	Место жительства:
+		   	<b>Карагандинская обл, Темиртау</b>
+		    </p>
+            <p>
+            Цель:
+            <b>Получение должности: HTML CSS JS верстальщик сайтов</b>
+            </p>
+		</div>
+	</div><!--flex container-->
+	<div class="container">
+		<h2>Навыки</h2>
+		<ul>
+			<li>Linux: Установка системы, пакетов, частичное администрирование системы.</li>
+			<li>Графический дизайн: фотошоп(растровый редактор), gimp(растровый редактор), inkscape(векторный редактор).</li>
+			<li>html5, css3, javascript(начальный уровень), svg(smil, animation, plugin).</li>
+			<li>Адаптивная вёрстка, подбор используемых элементов для страницы.</li>
+			<li>Дизайн, нарезка макета, сканирование и обработка фото.</li>
+			<li>javascript установка live reload некие скрипты от node.js(gulp), AppServer(php5-7) выборка и запись в базу данных.</li>
+			<li>Вёрстка HTML шаблонов из PSD или с векторного шаблона.</li>
+			<li>Русский: родной.</li>
+			<li>Английский: с переводчиком.</li>
+			<li>sass/scss не требовалось.</li>
+			<li>Отличное знание ПК на уровне "Опытный пользователь".</li>
+		</ul>
+	</div><!--container-->
+	 <div class="container char">
+	 	<h2>Черты характера</h2>
+	 	<span>Комуникабельность</span>
+	 	<span>Обучаемость</span>
+	 	<span>Усидчивость</span>
+	 	<span>Пунктуальность</span>
+	 	<span>Внимательность</span>
+	 	<span>Исполнительность</span>
+	 	<span>Ответственность</span>
+	 </div><!--container-->
+	 <div class="container">
+	 	<h2>Опыт работы</h2>
+        <p>Коллективного опыта не было</p>
+        <p>Но выполнял работы которую получал с toster.ru от пользователей, на ru.stackoverflow.com и на otvet.mail.ru/html</p>
+        <p>Всю работу выполнял через teamviewer надеясь на порядочность</p>
+
+        <li><b>Финляндия</b>. Заказчика не помню: Получил заказ на написание шаблона wordpress и установки его на движёк,
+            работу окончил в срок, заказчик на 80% был доволен
+        </li>
+        <li><b>Эстония</b> Вёрстка одностраничника, время дали двое суток, сделал раньше, использовал jQuery плагины, стоимость работы не великая но за то получил некий опыт
+
+        </li>
+        <li>Вёрстка с Ноля анимированного логотипа</li>
+        <li>Частично ознакомится с с тем что я умею можно на  <a href="https://codepen.io/dashboard">codepen.io/dashboards</a></li>
+	 </div>
+
+	 <h2 style="text-align: center;">Очень надеюсь на получение работы</h2>
 </body>
 </html>
