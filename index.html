@@ -3,165 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Резюме</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-    	*{
-    		box-sizing: border-box;
-    	}
+	<style>
+	#rect {
+	  width: 100px;
+	  height: 50px;
+	  background: red;
+	  margin-top: 50px;
+	  transiton: 0.34s linear;
+	}
 
-    	img{
-    		display: block;
-    		max-width: 100%;
-    	}
-
-    	html,body{
-    		width: 100%;
-    		margin: 0;
-    		padding: 0;
-    	    font-family: 'Open Sans', sans-serif;
-    	}
-
-    	.container-flex{
-    		display: -webkit-flex;
-    		display: -moz-flex;
-    		display: -ms-flex;
-    		display: -o-flex;
-    		display: flex;
-    		margin: auto;
-            padding:0 20vw;
-    	}
-
-    	.container{
-    		padding: 0 20vw;
-    	}
-
-    	.container-flex .item{
-    		width: 50%;
-    		padding: 6px;
-    	}
-
-    	.container-flex .item:nth-of-type(2){
-    		padding-left: 30px;
-    		display: -webkit-flex;
-    		display: -moz-flex;
-    		display: -ms-flex;
-    		display: -o-flex;
-    		display: flex;
-    		-webkit-flex-direction: column;
-    		-moz-flex-direction: column;
-    		-ms-flex-direction: column;
-    		-o-flex-direction: column;
-    		flex-direction: column;
-    		justify-content: center;
-    	}
-
-    	.item span{
-    		font-size: 20px;
-    	}
-        ul li{
-        	list-style-type: decimal;
-        	font-weight: 700;
-        	border-bottom: 1px dashed #ccc;
-        	margin-bottom: 6px;
-        }
-
-        .char span{
-        	display: inline-block;
-        	padding: 4px 10px 4px 4px;
-        	background: lightgreen;
-        	margin: 4px;
-        }
-    </style>
+	</style>
 </head>
 <body>
-	<div class="container-flex">
-		<div class="item">
-			<img src="https://anonimuslensky.github.io/item.jpg" alt="">
-		</div>
-		<div class="item">
-			<p>
-			Ф.И.О:
-			<span><b>Ляпун</b></span>
-			<span><b>Максим</b></span>
-			<span><b>Сергеевич</b></span>
-		   </p>
-		   <p>
-		   	Дата Рождения:
-		   	<span><b>25.</b></span>
-		   	<span><b>января.</b></span>
-		   	<span><b>1978</b></span>
-		   </p>
-		   <p>
-		   	Возраст:
-		   	<b>41 год</b>
-		   </p>
-		   <p>
-		   	Телефон:
-		   	<b>+7-707-621-77-89</b>
-		   </p>
-		   <p>
-		   	Электронная почта:
-		   	<b>lenovonuj@gmail.com</b>
-		   </p>
-		   <p>
-            Гражданское состояние:
-		   	<b>Женат</b></p>
-		   <p>
-            Гражданство:
-		   	<b>Казахстан</b>
-		   </p>
-		   <p>
-		   	Место жительства:
-		   	<b>Карагандинская обл, Темиртау</b>
-		    </p>
-            <p>
-            Цель:
-            <b>Получение должности: HTML CSS JS верстальщик сайтов</b>
-            </p>
-		</div>
-	</div><!--flex container-->
-	<div class="container">
-		<h2>Навыки</h2>
-		<ul>
-			<li>Linux: Установка системы, пакетов, частичное администрирование системы.</li>
-			<li>Графический дизайн: фотошоп(растровый редактор), gimp(растровый редактор), inkscape(векторный редактор).</li>
-			<li>html5, css3, javascript(начальный уровень), svg(smil, animation, plugin).</li>
-			<li>Адаптивная вёрстка, подбор используемых элементов для страницы.</li>
-			<li>Дизайн, нарезка макета, сканирование и обработка фото.</li>
-			<li>javascript установка live reload некие скрипты от node.js(gulp), AppServer(php5-7) выборка и запись в базу данных.</li>
-			<li>Вёрстка HTML шаблонов из PSD или с векторного шаблона.</li>
-			<li>Русский: родной.</li>
-			<li>Английский: с переводчиком.</li>
-			<li>sass/scss не требовалось.</li>
-			<li>Отличное знание ПК на уровне "Опытный пользователь".</li>
-		</ul>
-	</div><!--container-->
-	 <div class="container char">
-	 	<h2>Черты характера</h2>
-	 	<span>Комуникабельность</span>
-	 	<span>Обучаемость</span>
-	 	<span>Усидчивость</span>
-	 	<span>Пунктуальность</span>
-	 	<span>Внимательность</span>
-	 	<span>Исполнительность</span>
-	 	<span>Ответственность</span>
-	 </div><!--container-->
-	 <div class="container">
-	 	<h2>Опыт работы</h2>
-        <p>Коллективного опыта не было</p>
-        <p>Но выполнял работы которую получал с toster.ru от пользователей, на ru.stackoverflow.com и на otvet.mail.ru/html</p>
-        <p>Всю работу выполнял через teamviewer надеясь на порядочность</p>
+	<button type="button" id="r">Вправо</button>
+	<button type="button" id="l">Влево</button>
 
-        <li><b>Финляндия</b>. Заказчика не помню: Получил заказ на написание шаблона wordpress и установки его на движёк,
-            работу окончил в срок, заказчик на 80% был доволен
-        </li>
-        <li><b>Эстония</b> Вёрстка одностраничника, время дали двое суток, сделал раньше, использовал jQuery плагины, стоимость работы не великая но за то получил некий опыт
+	<div id="rect"></div>
+	<script>
+	let step = 0;
 
-        </li>
-        <li>Вёрстка с Ноля анимированного логотипа</li>
-        <li>Частично ознакомится с с тем что я умею можно на  <a href="https://codepen.io/dashboard">codepen.io/dashboards</a></li>
-	 </div>
+	r.onclick = function () {
+	  rect.style.transform = `translate(${step}px,0)`;
+	  step = step + 10;
+	};
 
-	 <h2 style="text-align: center;">Очень надеюсь на получение работы</h2>
+	l.onclick = function () {
+	  rect.style.transform = `translate(${step}px,0)`;
+	  step = step - 10;
+	};
+
+	</script>
 </body>
 </html>
